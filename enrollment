@@ -146,7 +146,7 @@ select * from CoursesOptedByStudent;
 6) Create a trigger that prevents a student from enrolling in a course if the marks pre_requisit is less than the given threshold
 
 DELIMITER //
-create or replace trigger PreventEnrollment
+create trigger PreventEnrollment
 before insert on Enroll
 for each row
 BEGIN
@@ -158,5 +158,4 @@ END;//
 DELIMITER ;
 INSERT INTO Enroll VALUES
 ("01HF235", 002, 5, 5);
-
 select *from Enroll;
