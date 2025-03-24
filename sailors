@@ -117,3 +117,4 @@ BEGIN
 	END IF;
 END;//
 DELIMITER ;
+delete from Boat where bid=103;
