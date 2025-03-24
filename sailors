@@ -108,7 +108,7 @@ select * from ReservedBoatsWithRatedSailor;
 8) Trigger that prevents boats from being deleted if they have active reservation
 
 DELIMITER //
-create or replace trigger CheckAndDelete
+create trigger CheckAndDelete
 before delete on Boat
 for each row
 BEGIN
